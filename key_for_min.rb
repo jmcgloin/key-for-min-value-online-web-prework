@@ -8,8 +8,8 @@ def key_for_min_value(name_hash)
   name_hash.each do
     |key, val|
     if smallest_value == nil || key < smallest_value
-      smallest_value == val
-      smallest_value_key == key
+      smallest_value = val
+      smallest_value_key = key
     end
      puts "#{key}, #{val}"
     puts "#{smallest_value_key}, #{smallest_value}"
